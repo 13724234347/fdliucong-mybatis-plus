@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59fd423c-a77b-4b0a-b9d9-4a0d7454ceb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fdliucong-mybatis-plus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-common/src/main/java/com/fd/liucong/entity/FastdfsFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-common/target/classes/com/fd/liucong/entity/Business.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-common/target/classes/com/fd/liucong/entity/FastdfsFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/src/main/java/com/fd/liucong/dao/FastdfsFileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/src/main/java/com/fd/liucong/service/FastdfsFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/src/main/java/com/fd/liucong/service/impl/FastdfsFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/src/main/resources/mapper/FastdfsFileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/META-INF/fdliucong-service.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/com/fd/liucong/dao/BusinessMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/com/fd/liucong/dao/FastdfsFileMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/com/fd/liucong/service/BusinessService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/com/fd/liucong/service/FastdfsFileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/com/fd/liucong/service/impl/FastdfsFileServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/mapper/BusinessMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fdliucong-service/target/classes/mapper/FastdfsFileMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdliucong-common/src/main/resources/templates/entity_swagger.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/fdliucong-common/src/main/resources/templates/entity_swagger.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdliucong-common/target/classes/templates/entity_swagger.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/fdliucong-common/target/classes/templates/entity_swagger.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdliucong-service/src/main/java/com/fd/liucong/service/impl/BusinessServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdliucong-service/src/test/java/com/fd/liucong/GeneratorCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/fdliucong-service/src/test/java/com/fd/liucong/GeneratorCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdliucong-service/target/test-classes/com/fd/liucong/GeneratorCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/fdliucong-service/target/test-classes/com/fd/liucong/GeneratorCmd.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/fdliucong-common/src/main/java/com/fd/liucong/generator/GeneratorService.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="G:\lc\fdliucong-github\fdliucong-mybatis-plus\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UbQAfrbu5HETZlu2zboIf0Euxb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fd.liucong" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\liucongProjects\fdliucong-mybatis-plus\fdliucong-service\src\main\resources" />
+      <recent name="F:\liucongProjects\fdliucong-mybatis-plus\fdliucong-common\src\main\resources" />
+      <recent name="F:\liucongProjects\fdliucong-mybatis-plus\fdliucong-common\src\main\java\com\fd\liucong\generator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GeneratorCmd.generate">
+    <configuration name="GeneratorCmd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fdliucong-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fd.liucong.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fd.liucong" />
+      <option name="MAIN_CLASS_NAME" value="com.fd.liucong.GeneratorCmd" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorCmd.generate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fdliucong-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fd.liucong.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fd.liucong" />
+      <option name="MAIN_CLASS_NAME" value="com.fd.liucong.GeneratorCmd" />
+      <option name="METHOD_NAME" value="generate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GeneratorCmd.generate" />
+        <item itemvalue="JUnit.GeneratorCmd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59fd423c-a77b-4b0a-b9d9-4a0d7454ceb5" name="Default Changelist" comment="" />
+      <created>1565336856141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565336856141</updated>
+      <workItem from="1565336857926" duration="4412000" />
+      <workItem from="1565343303109" duration="2833000" />
+      <workItem from="1575622675151" duration="2609000" />
+      <workItem from="1575874205153" duration="830000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="459" y="44" key="CommitChangelistDialog2" timestamp="1575874979687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="459" y="44" key="CommitChangelistDialog2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575874979687" />
+    <state width="1869" height="335" key="GridCell.Tab.0.bottom" timestamp="1575875019860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019860" />
+    <state width="1869" height="335" key="GridCell.Tab.0.center" timestamp="1575875019860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019860" />
+    <state width="1869" height="335" key="GridCell.Tab.0.left" timestamp="1575875019860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019860" />
+    <state width="1869" height="335" key="GridCell.Tab.0.right" timestamp="1575875019860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019860" />
+    <state width="1869" height="335" key="GridCell.Tab.1.bottom" timestamp="1575875019610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019610" />
+    <state width="1869" height="335" key="GridCell.Tab.1.center" timestamp="1575875019610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019610" />
+    <state width="1869" height="335" key="GridCell.Tab.1.left" timestamp="1575875019610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019610" />
+    <state width="1869" height="335" key="GridCell.Tab.1.right" timestamp="1575875019610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="335" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575875019610" />
+    <state x="-1920" y="0" width="916" height="832" key="find.popup" timestamp="1575622875408">
+      <screen x="-1920" y="0" width="1536" height="832" />
+    </state>
+    <state x="-1920" y="0" width="916" height="832" key="find.popup/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1575622875408" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

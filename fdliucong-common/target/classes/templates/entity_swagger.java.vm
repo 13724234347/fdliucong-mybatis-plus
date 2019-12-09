@@ -5,6 +5,7 @@ import ${pkg};
 #end
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.util.Objects;
 #if(${entityLombokModel})
 
@@ -40,10 +41,10 @@ public class ${entity} extends ${superEntityClass}#if(${activeRecord})<${entity}
 #elseif(${activeRecord})
 public class ${entity} extends Model<${entity}> {
 #else
-public class ${entity} implements Serializable {
+public class ${entity} implements Serializable{
 #end
 
-private static final long serialVersionUID = 1L;
+private static final long serialVersionUID=1L;
 
 ## ----------  BEGIN 字段循环遍历  ----------
 #foreach($field in ${table.fields})
@@ -54,7 +55,7 @@ private static final long serialVersionUID = 1L;
     @ApiModelProperty(value = "${field.comment}")
     #end
     #if(${field.keyFlag})
-    ## 主键
+        ## 主键
         #if(${field.keyIdentityFlag})
         @TableId(value = "${field.name}", type = IdType.AUTO)
         #elseif(!$null.isNull(${idType}) && "$!idType" != "")
@@ -62,9 +63,9 @@ private static final long serialVersionUID = 1L;
         #elseif(${field.convert})
         @TableId("${field.name}")
         #end
-    ## 普通字段
+        ## 普通字段
     #elseif(${field.fill})
-    ## -----   存在字段填充设置   -----
+        ## -----   存在字段填充设置   -----
         #if(${field.convert})
         @TableField(value = "${field.name}", fill = FieldFill.${field.fill})
         #else
@@ -73,11 +74,11 @@ private static final long serialVersionUID = 1L;
     #elseif(${field.convert})
     @TableField("${field.name}")
     #end
-## 乐观锁注解
+    ## 乐观锁注解
     #if(${versionFieldName}==${field.name})
     @Version
     #end
-## 逻辑删除注解
+    ## 逻辑删除注解
     #if(${logicDeleteFieldName}==${field.name})
     @TableLogic
     #end
@@ -94,12 +95,12 @@ private ${field.propertyType} ${field.propertyName};
             #set($getprefix="get")
         #end
 
-    public ${field.propertyType} ${getprefix}${field.capitalName}() {
+    public ${field.propertyType} ${getprefix}${field.capitalName}(){
             return ${field.propertyName};
             }
 
         #if(${entityBuilderModel})
-        public ${entity} set${field.capitalName}(${field.propertyType} ${field.propertyName}) {
+        public ${entity} set${field.capitalName}(${field.propertyType} ${field.propertyName}){
         #else
         public void set${field.capitalName}(${field.propertyType} ${field.propertyName}) {
         #end
@@ -113,13 +114,13 @@ private ${field.propertyType} ${field.propertyName};
 
 #if(${entityColumnConstant})
     #foreach($field in ${table.fields})
-    public static final String ${field.name.toUpperCase()} = "${field.name}";
+    public static final String ${field.name.toUpperCase()} ="${field.name}";
 
     #end
 #end
 #if(${activeRecord})
 @Override
-protected Serializable pkVal() {
+protected Serializable pkVal(){
     #if(${keyPropertyName})
             return this.${keyPropertyName};
     #else
@@ -130,8 +131,8 @@ protected Serializable pkVal() {
 #end
 #if(!${entityLombokModel})
 @Override
-public String toString() {
-        return "${entity}{" +
+public String toString(){
+        return"${entity}{" +
     #foreach($field in ${table.fields})
         #if($!{velocityCount}==1)
                 "${field.propertyName}=" + ${field.propertyName} +
@@ -142,35 +143,35 @@ public String toString() {
         "}";
         }
 
-@Override
-public int hashCode() {
-        return Objects.hash(
-    #foreach($field in ${table.fields})
-        #if($!{velocityCount}==1)
-            ${field.propertyName}
-        #else
-                ,${field.propertyName}
-        #end
-    #end
-        );
-        }
+##@Override
+##public int hashCode(){
+##        return Objects.hash(
+##    #foreach($field in ${table.fields})
+##        #if($!{velocityCount}==1)
+##            ${field.propertyName}
+##        #else
+##                ,${field.propertyName}
+##        #end
+##    #end
+##        );
+##        }
 
 
-@Override
-public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-    ${entity} that = (${entity}) o;
-        return
-    #foreach($field in ${table.fields})
-        #if($!{velocityCount}==1)
-                Objects.equals(${field.propertyName}, that.${field.propertyName})
-        #else
-                && Objects.equals(${field.propertyName}, that.${field.propertyName})
-        #end
-    #end
-        ;
-        }
+##@Override
+##public boolean equals(Object o) {
+##        if (this == o) return true;
+##        if (o == null || getClass() != o.getClass()) return false;
+##    ${entity} that = (${entity}) o;
+##        return
+##    #foreach($field in ${table.fields})
+##        #if($!{velocityCount}==1)
+##                Objects.equals(${field.propertyName}, that.${field.propertyName})
+##        #else
+##                && Objects.equals(${field.propertyName}, that.${field.propertyName})
+##        #end
+##    #end
+##        ;
+##        }
 
 #end
         }

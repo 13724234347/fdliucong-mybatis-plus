@@ -17,28 +17,28 @@ public class GeneratorCmd {
         String javaPath = "src/main/java";
         String resPath = "src/main/resources";
         String[] tablesDB = {
-                "ai_business"
+                "fdft_fastdfs_file"
         };
-        String[] tablePrefix = {"ai", "trip"};
+        String[] tablePrefix = {"fdft", "trip"};
 
         //生成实体
         GeneratorEntity generatorEntity = new GeneratorEntity()
-                .setDbUrl("jdbc:mysql://39.130.160.127:3306/konggang_zxshows?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false")
-                .setDbUserName("konggang_zxshows")
-                .setDbPassword("HY7X7x8FZNe7y5dM")
+                .setDbUrl("jdbc:mysql://192.168.0.192:3306/lc?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false")
+                .setDbUserName("root")
+                .setDbPassword("rootroot")
                 .setPackageName("com.fd.liucong")
                 .setJavaPath(new File(getProjectDir("fdliucong-common"), javaPath).getPath());
         generatorEntity.generateByTables("", tablesDB, tablePrefix);
 
         //生成seivice
         GeneratorService generatorService = new GeneratorService()
-                .setDbUrl("jdbc:mysql://39.130.160.127:3306/konggang_zxshows?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false")
-                .setDbUserName("konggang_zxshows")
-                .setDbPassword("HY7X7x8FZNe7y5dM")
+                .setDbUrl("jdbc:mysql://192.168.0.192:3306/lc?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false")
+                .setDbUserName("root")
+                .setDbPassword("rootroot")
                 .setPackageName("com.fd.liucong")
                 .setJavaPath(new File(getProjectDir("fdliucong-service"), javaPath).getPath())
                 .setResPath(new File(getProjectDir("fdliucong-service"), resPath).getPath());
-        generatorService.setEntityPackageName("com.fd.liucong");
+        generatorService.setEntityPackageName("com.fd.liucong.entity");
         generatorService.generateByTables("", tablesDB, tablePrefix);
     }
 
