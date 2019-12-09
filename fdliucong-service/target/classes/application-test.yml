@@ -1,0 +1,67 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /zxserver
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #druid相关配置
+    druid:
+      #监控统计拦截的filters
+      filters: stat
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://120.24.40.216:3306/konggang_zxshows?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+#      url: jdbc:mysql://127.0.0.1:3306/zxshowstar_com?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+      #      正式服
+      #      url: jdbc:mysql://47.106.112.62:3306/zxshowstar_com?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+      username: konggang_zxshows
+      password: HY7X7x8FZNe7y5dM
+      #配置初始化大小/最小/最大
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      #获取连接等待超时时间
+      max-wait: 60000
+      #间隔多久进行一次检测，检测需要关闭的空闲连接
+      time-between-eviction-runs-millis: 60000
+      #一个连接在池中最小生存的时间
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      #打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: 20
+
+  redis:
+    database: 0
+    host: 47.95.202.88
+    port: 6379
+    password: qmkt
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 300MB
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.winterchen.model
+  configuration:
+    map-underscore-to-camel-case: true
+#logging:
+#  level:
+#    com.winterchen.mapper : info
+#全局的配置参数。方便测试服和正式版自动切换
+globalstring:
+  url:
+    memberpayresult: https://admin.zxshowstar.com/index.php/miniapi/Minispecial/vipPayNotifyUrl
+#    memberpayresult: https://test.zxshowstar.com/zxserver/memberpayresult
+#    memberpayresult2: https://test.zxshowstar.com/zxserver/memberpayresult2
+    memberpayresult2:  https://admin.zxshowstar.com/index.php/miniapi/Minispecial/vipPayNotifyUrl
+    payresult: https://test.zxshowstar.com/zxserver/payresult
+    paypersonresult: https://test.zxshowstar.com/zxserver/paypersonresult
+    wxpay: https://api.mch.weixin.qq.com/pay/unifiedorder
+  ids:
+    upcid: 1477
